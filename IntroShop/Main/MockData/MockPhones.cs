@@ -19,7 +19,7 @@ namespace IntroShop.Main.MockData
                     new Phone
                     {
                         name = "Samsung S10",
-                        description = "Best phone by Samsung",
+                        description = "Best phone by Samsung Lorem ipsum dolor sin amet lorem ",
                         img = "/img/samsung_galaxy_s10_6_128_gb.jpg",
                         price = 23000,
                         Category = _categoryPhone.AllCategories.First()
@@ -27,7 +27,7 @@ namespace IntroShop.Main.MockData
                     new Phone
                     {
                         name = "Nokia 3310",
-                        description = "Old phone.",
+                        description = "Old phone. Lorem ipsum dolor sin amet lorem ",
                         img = "/img/nokia_3310.jpg",
                         price = 700,
                         Category = _categoryPhone.AllCategories.Last()

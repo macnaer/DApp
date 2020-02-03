@@ -1,12 +1,35 @@
 ﻿<h1>All phones</h1>
-
-@{ 
-    foreach(var item in Model.allPhones)
-    {
-        <div>Vendor: @item.name</div>
-        <div>Description: @item.description</div>
-        <img src="@item.img" alt="@item.name" />
-        <div>Peice: @item.price </div>
-        @*<div>Category: @item.currentCategory</div>*@
-    }
-}
+<div class="product_grid">
+    <ul class="product_list list">
+        @{
+            foreach (var item in Model.allPhones)
+            {
+                <li class="product_item">
+                    <div class="product_sale">
+                        <p>On Sale</p>
+                    </div>
+                    <div class="product_image">
+                        <a href="#"><img src="@item.img" alt="@item.name"></a>
+                    </div>
+                    <div class="product_values">
+                        <div class="product_title">
+                            <h5>@item.name</h5>
+                        </div>
+                        <div class="product_price">
+                            <a href="#"><span class="price_old">@item.price</span> <span class="price_new">@item.price</span></a>
+                            <span class="product_rating"></span>
+                        </div>
+                        <div class="product_desc">
+                            <p class="truncate">@item.description</p>
+                        </div>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <button class="product_compare"><i class="fa fa-random"></i></button>
+                            <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </li>
+            }
+          }
+     </ul>
+</div>
